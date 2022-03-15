@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+
+<html>
+<title>
+  Home 
+</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<style type="text/css">
+:root{
+  /*This is where colours live, get you some*/
+  --text:#ffffff;
+  --texttwo:#F7F9FC;
+  --bg:#0498e2;
+  --body:#f57878;
+  --fg-one:#ff0000;
+  --fg-two:#e0cb0a;
+  --fg-three:#276ac0;
+  --fg-four:#ff0000;
+  --fg-five:#e0cb0a;
+  --shadow:#070707;
+  --textshadow:#070707;
+  --title:#F7F9FC;
+}
+* {
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.7s;
+  word-wrap: none;
+  white-space: nowrap;
+  font-smooth: never;
+  -webkit-font-smoothing: none;}
+html {
+  background:url("https://www.slideteam.net/media/catalog/product/cache/960x720/h/t/html_text_with_crane_in_background_stock_photo_Slide01.jpg") ;
+  background-size: fit;
+  background-repeat: repeat;
+  background-position: center;
+  color: var(--text);
+  font-family: 'Open Sans', monospace;
+  font-size: 13pt;
+  font-kerning: none;}
+body {
+}
+input, select, textarea{
+  background: var(--title);
+  width: 600px;
+  height: 40px;
+  padding: 0px 10px 0px 10px;
+  margin: 20px 20px 0px -40px;
+  box-shadow: 3px 3px 3px var(--shadow);}
+#q {
+  border: 2px none var(--title);
+  font-family: "Open Sans", monospace;
+  color: var(--text);
+  text-align: center;
+  font-size: 11pt;
+  box-shadow: 3px 3px 3px var(--shadow);
+  text-shadow: 1.5px 0px 0px black;
+  border: 6px double black}
+#title{
+  width: 600px;
+  background-color: var(--textshadow);
+  border: 2px solid silver;
+  margin: 20px 20px 10px -40px;
+  padding: 0px 14px 0px 14px;
+  text-align: center;
+  box-shadow: 3px 3px 3px var(--shadow);}
+#body{
+  position: sticky;
+  background-color: var(--body);
+  box-shadow: 3px 3px 3px var(--shadow);
+  margin: 11% auto auto 10%;
+  padding: 10px 10px 10px 10px;
+  width: 60px;
+  height: 580px;
+}
+.cage{
+  height:40px;
+  width: auto;}
+.cat{
+  margin: 35px 5px 20px -40px;
+  padding: 15px 5px 0px 5px;
+  text-align: center;
+  box-shadow: 3px 3px 3px var(--shadow);
+  text-shadow: 1.5px 1.5px 0px var(--textshadow);
+  height: 40px;
+  width: 200px;
+  color: var(--texttwo);
+  display: block;
+  z-index: 1;
+  transition: all 0.5s;
+  font-weight: 600;}
+.lynx{
+  visibility: hidden;
+  width: 0;
+  background-color: inherit;
+  overflow: hidden;
+  position: relative;
+  top: -75px;
+  left: 160px;
+  height: 35px;
+  padding: 15px 5px 5px 5px;
+  box-shadow: 3px 3px 2px var(--shadow);
+  text-align: right;
+  font-size: 11pt;
+  font-weight: 500;
+  z-index: 2;}
+a{
+  padding: 0px 5px 0px 5px;
+  color: var(--text);
+  display: inline;
+  visibility: none;}
+a:hover {
+  text-shadow: 1px 2px 0px var(--text);
+  marign-left:-1px;
+  transition: shadow 0.3s}
+.one {
+  background-color: var(--fg-one);
+  color: var(--fg-one);}
+.two {
+  background-color: var(--fg-two);
+  color: var(--fg-two);}
+.three {
+  background-color: var(--fg-three);
+  color: var(--fg-three);}
+.four {
+  background-color: var(--fg-four);
+  color: var(--fg-four);}
+.five{
+  background-color: var(--fg-five);
+  color: var(--fg-five);}
+.cage:hover > .lynx {
+  box-shadow: 3px 3px 3px var(--shadow);
+  padding-right: 25px;
+  visibility: visible;}
+.cage:hover > * > a {
+  visibility: visible;}
+/*tab width*/
+.cage:hover > #post {
+  width: 180px;}
+.cage:hover > #do {
+  width: 260px;}
+.cage:hover > #fun {
+  width: 180px;}
+.cage:hover > #oni {
+  width: 150px;}
+.cage:hover > #train {
+  width: 250px;}
+img {
+  position: absolute;
+  margin: auto;
+  left: 10;
+  right: 0;
+  top: 10%;
+  height: 10%;
+  border: 6px double rgb(51, 1, 1);
+  box-shadow: 5px 5px 5px var(--shadow);
+}
+</style>
+<script type="text/javascript" language="javascript">
+var $=function(id) { return document.getElementById(id); };
+var search=[ // Search engines
+    ["",    "https://www.google.com/#q="],                   
+    ["!o",  "https://www.google.com/#q="],                                          
+    ["!i",  "https://www.google.com/search?tbm=isch&q="],                           
+    ["!y",  "https://www.youtube.com/results?search_query="],                       
+    ["!w",  "http://en.wikipedia.org/w/index.php?search="],                         
+    ["!t",  "http://shop.tcgplayer.com/magic/product/show?ProductName="],
+    ["!a",  "https://animebytes.tv/torrents.php?searchstr="],                       
+    ["!g",  "https://gazellegames.net/torrents.php?order_by=relevance&searchstr="], 
+    ["!r",  "https://apollo.rip/torrents.php?searchstr"],                           
+    ["!x",  ""]
+];
+var ss="";
+function init() {
+    for(var i=0;i<search.length;i++) if(search[i][0]=="") ss=search[i][1];
+    if(ss=="") alert("Error: Missing default search engine!");
+
+    build();
+
+    $('q').value="";
+    $('q').focus();
+}
+function handleQuery(e,q) { // Handle search query
+    var key=e.keyCode || e.which;
+
+    if(key==13) { // enter
+        if(q.lastIndexOf("!")!=-1) {
+            var x=q.lastIndexOf("!"),found=false;
+
+            for(var i=0;i<search.length;i++) {
+                if(search[i][0]==q.substr(x)) { // Find "!?"
+                    found=true; window.location=search[i][1]+q.substr(0,x).replace(/&/g,"%26");
+                }
+            }
+            if(!found) { // Invalid "!?", use default
+                window.location=ss+q.substr(0,x).replace(/&/g,"%26");
+            }
+        } else { // "!?" where not specified, use default
+            window.location=ss+q.replace(/&/g,"%26");
+        }
+    }
+}
+</script>
+<body onload="javascript:init()";>
+  <div id="body">
+
+    <h1 id="title">
+      Ann Arbor Hands On Museum
+    </h1>
+
+      <input  autofocus type="text" id="q" value="" placeholder="" onkeypress="javascript:handleQuery(event,this.value);" onfocus="this.value=this.value" />
+    <div class="cage">
+      <b class="cat one">Events</b>
+      <div class="lynx one" id="post">
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+      </div>
+    </div>
+    <div class="cage">
+      <b class="cat two">About Us</b>
+      <div class="lynx two" id="do">
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+      </div>
+    </div>
+    <div class="cage">
+      <b class="cat three">Plan A Visit</b>
+      <div class="lynx three" id="fun">
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+      </div>
+    </div>
+    <div class="cage">
+      <b class="cat four">Contact Us</b>
+      <div class="lynx four" id="oni">
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+      </div>
+    </div>
+    <div class="cage">
+      <b class="cat five">sussy launch codes</b>
+      <div class="lynx five" id="train">
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+        <a href="https://google.com">Link</a>
+      </div>
+    </div>
+  </div>
+  <img src="https://www.aahom.org/sites/default/files/logo-sansserif.png" alt=Whatever>
+</body>
